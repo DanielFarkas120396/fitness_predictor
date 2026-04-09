@@ -1,0 +1,56 @@
+sheet,column_name,data_type,description
+Daily_Clean,date,date,Calendar date of the daily wearable summary (YYYY-MM-DD).
+Daily_Clean,age_years,integer,Athlete age fixed at 30 years for this project baseline.
+Daily_Clean,weight_kg,float,"Body weight in kilograms, constrained around 95-99kg."
+Daily_Clean,sleep_hours,float,Total sleep duration in hours.
+Daily_Clean,sleep_efficiency_pct,float,Sleep efficiency percentage.
+Daily_Clean,sleep_score,integer,Composite recovery sleep score from 0-100.
+Daily_Clean,resting_hr_bpm,integer,Resting heart rate in beats per minute.
+Daily_Clean,hrv_ms,integer,Heart rate variability in milliseconds.
+Daily_Clean,body_battery_morning,integer,Garmin-style morning energy score (0-100).
+Daily_Clean,stress_score,integer,Daily stress score (lower is better).
+Daily_Clean,soreness_score,integer,Muscular soreness score from 1-10.
+Daily_Clean,steps,integer,Daily step count.
+Daily_Clean,calories_burned,integer,Total daily calories burned.
+Daily_Clean,activity_type,category,Primary activity actually performed that day.
+Daily_Clean,duration_min,integer,Activity duration in minutes.
+Daily_Clean,distance_km,float,Distance covered in kilometers where relevant.
+Daily_Clean,avg_hr_bpm,integer,Session average heart rate.
+Daily_Clean,max_hr_bpm,integer,Session maximum heart rate.
+Daily_Clean,training_rpe,integer,Session RPE from 1-10.
+Daily_Clean,training_load,integer,Session load proxy based on duration and intensity.
+Daily_Clean,vo2max_est,float,Estimated VO2max.
+Daily_Clean,respiration_rate_sleep,float,Average sleep respiration rate.
+Daily_Clean,spo2_avg_pct,float,Average SpO2 percentage.
+Daily_Clean,hydration_l,float,Estimated hydration intake in liters.
+Modeling_Ready,date_today,date,Date for which today's recommendation is generated.
+Modeling_Ready,age_years,integer,Athlete age.
+Modeling_Ready,weight_kg_today,float,Today's morning body weight.
+Modeling_Ready,sleep_score_today,integer,Today's morning sleep score.
+Modeling_Ready,sleep_hours_today,float,Today's sleep duration in hours.
+Modeling_Ready,sleep_efficiency_pct_today,float,Today's sleep efficiency percentage.
+Modeling_Ready,resting_hr_bpm_today,integer,Today's morning resting HR.
+Modeling_Ready,hrv_ms_today,integer,Today's HRV.
+Modeling_Ready,body_battery_today,integer,Today's morning body battery.
+Modeling_Ready,stress_score_today,integer,Today's stress score.
+Modeling_Ready,soreness_score_today,integer,Today's soreness score.
+Modeling_Ready,vo2max_est_today,float,Today's estimated VO2max.
+Modeling_Ready,respiration_rate_sleep_today,float,Today's sleep respiration rate.
+Modeling_Ready,spo2_avg_pct_today,float,Today's average SpO2.
+Modeling_Ready,hydration_l_today,float,Today's hydration estimate.
+Modeling_Ready,yesterday_activity_type,category,Yesterday's actual session type.
+Modeling_Ready,yesterday_duration_min,integer,Yesterday's session duration.
+Modeling_Ready,yesterday_distance_km,float,Yesterday's distance.
+Modeling_Ready,yesterday_avg_hr_bpm,integer,Yesterday's average session HR.
+Modeling_Ready,yesterday_max_hr_bpm,integer,Yesterday's max session HR.
+Modeling_Ready,yesterday_training_rpe,integer,Yesterday's RPE.
+Modeling_Ready,yesterday_training_load,integer,Yesterday's training load.
+Modeling_Ready,yesterday_steps,integer,Yesterday's step count.
+Modeling_Ready,yesterday_calories_burned,integer,Yesterday's calories burned.
+Modeling_Ready,acute_load_3d,float,3-day trailing average of previous daily training load.
+Modeling_Ready,rolling_load_7d,float,7-day trailing average of previous daily training load.
+Modeling_Ready,recovery_signal,integer,Formula-based morning recovery signal (0-100).
+Modeling_Ready,readiness_score_today,integer,Formula-based readiness score used for recommendations.
+Modeling_Ready,suggested_activity_today,category,Rule-based recommendation label for today's training.
+Modeling_Ready,actual_activity_type_today,category,Actual activity performed today in the synthetic history.
+Modeling_Ready,actual_duration_min_today,integer,Actual duration performed today.
